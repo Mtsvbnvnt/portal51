@@ -1,0 +1,8 @@
+{
+  "name": "Portal 50+ API Dev",
+  "context": "..",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "api",
+  "workspaceFolder": "/app",
+  "remoteUser": "node"
+}

@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: portal50_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portal50_api
+    environment:
+      # OJO: usa el nombre que tu código realmente lee (MONGO_URI o MONGODB_URI)
+      - MONGO_URI=mongodb://mongo:27017/Portal_50
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:

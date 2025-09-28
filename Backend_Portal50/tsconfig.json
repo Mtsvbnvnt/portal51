@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                // Versión moderna de JS
+    "module": "CommonJS",              // Para Node.js
+    "rootDir": "./src",                // SOLO tu carpeta backend
+    "outDir": "./dist",                // Opcional: compilación a dist
+    "esModuleInterop": true,           // Importaciones ES
+    "strict": true,                    // Chequeos estrictos
+    "skipLibCheck": true,               // Ignorar declaraciones de tipos de node_modules
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts"],          // Solo .ts dentro de /src
+  "exclude": ["node_modules"]          // No compilar dependencias
+}

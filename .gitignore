@@ -1,0 +1,110 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist
+dist-ssr
+build
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sensitive files
+serviceAccountKey.json
+**/serviceAccountKey.json
+firebase.ts
+**/firebase.ts
+firebase-config.json
+**/firebase-config.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Temporary folders
+tmp
+temp
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Uploads (if they contain sensitive data)
+uploads/cv_usuarios/*
+uploads/fotos_perfil/*
+uploads/usuarios/*
+uploads/otros/*
+!uploads/cv_usuarios/.gitkeep
+!uploads/fotos_perfil/.gitkeep
+!uploads/usuarios/.gitkeep
+!uploads/otros/.gitkeep
+Backend_Portal50/uploads/cv_usuarios/*
+Backend_Portal50/uploads/fotos_perfil/*
+Backend_Portal50/uploads/usuarios/*
+Backend_Portal50/uploads/otros/*
+!Backend_Portal50/uploads/cv_usuarios/.gitkeep
+!Backend_Portal50/uploads/fotos_perfil/.gitkeep
+!Backend_Portal50/uploads/usuarios/.gitkeep
+!Backend_Portal50/uploads/otros/.gitkeep
+
+# Docker
+.dockerignore
+docker-compose.override.yml
